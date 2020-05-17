@@ -246,7 +246,10 @@ void updateCommOnFaces()
         }
       }
     }
+  }
 
+  FOREACH_FACE(f)
+  {
     // Update the value sent in case anything changed
     sendValueOnFace(f, neighborStates[f].faceValueOut);
   }
